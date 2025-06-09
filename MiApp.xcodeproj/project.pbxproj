@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CAB1E6D2DF6FE230061ADC0 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6CAB1E6C2DF6FE230061ADC0 /* FirebaseFirestore */; };
 		6CC8EC0F2DE856610046466D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6CC8EC0E2DE856610046466D /* FirebaseAuth */; };
 		6CC8EC132DE85A430046466D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6CC8EC122DE85A430046466D /* FirebaseAnalyticsOnDeviceConversion */; };
 		6CE47D422DF2E337009B3213 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 6CE47D412DF2E337009B3213 /* GoogleSignIn */; };
@@ -75,6 +76,7 @@
 				6CC8EC0F2DE856610046466D /* FirebaseAuth in Frameworks */,
 				6CC8EC132DE85A430046466D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				6CE47D422DF2E337009B3213 /* GoogleSignIn in Frameworks */,
+				6CAB1E6D2DF6FE230061ADC0 /* FirebaseFirestore in Frameworks */,
 				6CE47D442DF2E337009B3213 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +142,7 @@
 				6CC8EC122DE85A430046466D /* FirebaseAnalyticsOnDeviceConversion */,
 				6CE47D412DF2E337009B3213 /* GoogleSignIn */,
 				6CE47D432DF2E337009B3213 /* GoogleSignInSwift */,
+				6CAB1E6C2DF6FE230061ADC0 /* FirebaseFirestore */,
 			);
 			productName = MiApp;
 			productReference = 6CC8EBD92DE854340046466D /* MiApp.app */;
@@ -603,6 +606,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6CAB1E6C2DF6FE230061ADC0 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6CC8EC0D2DE856610046466D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		6CC8EC0E2DE856610046466D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 6CC8EC0D2DE856610046466D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
