@@ -104,7 +104,7 @@
                                                         <rect key="frame" x="90" y="37" width="68" height="53"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" image="Facebook"/>
+                                                        <buttonConfiguration key="configuration" style="plain" image="facebook"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -222,7 +222,7 @@
                                                 <rect key="frame" x="20" y="455" width="353" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K3W-pu-skq">
                                                 <rect key="frame" x="20" y="233" width="353" height="34"/>
@@ -252,6 +252,9 @@
                                                     <segment title="Female"/>
                                                     <segment title="Other"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="genderSegmentedControl:" destination="ty8-7z-nah" eventType="valueChanged" id="LT3-Fm-3JF"/>
+                                                </connections>
                                             </segmentedControl>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="genderIcon-male" translatesAutoresizingMaskIntoConstraints="NO" id="In4-cy-Yhk">
                                                 <rect key="frame" x="353" y="280" width="27" height="29"/>
@@ -274,7 +277,7 @@
                                                 <rect key="frame" x="20" y="497" width="353" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="By clicking &quot;Create an account,&quot; you confirm that you have accepted our Terms of Use and Privacy Policy." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WwG-G1-PpA">
                                                 <rect key="frame" x="76" y="539" width="240" height="54"/>
@@ -359,29 +362,29 @@
                                 <rect key="frame" x="0.0" y="162" width="393" height="573"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyH-G4-pFU">
-                                        <rect key="frame" x="153" y="419" width="86" height="35"/>
+                                        <rect key="frame" x="165" y="472" width="61" height="35"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Guardar"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Save"/>
                                     </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKf-Ko-ARk">
-                                        <rect key="frame" x="8" y="108" width="367" height="211"/>
+                                        <rect key="frame" x="13" y="177" width="367" height="211"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Información básica:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ug-Mp-pVf">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Basic information:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ug-Mp-pVf">
                                                 <rect key="frame" x="8" y="8" width="351" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbn-O2-JvP">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qbn-O2-JvP">
                                                 <rect key="frame" x="8" y="37" width="351" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellidos" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0v-KX-9Cj">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0v-KX-9Cj">
                                                 <rect key="frame" x="8" y="79" width="351" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -391,7 +394,7 @@
                                                 <rect key="frame" x="8" y="121" width="351" height="31"/>
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Género:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-KA-U1n">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5H-KA-U1n">
                                                         <rect key="frame" x="0.0" y="5" width="61" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -406,9 +409,9 @@
                                                         <rect key="frame" x="69" y="0.0" width="213" height="32"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                         <segments>
-                                                            <segment title="Hombre"/>
-                                                            <segment title="Mujer"/>
-                                                            <segment title="Otro"/>
+                                                            <segment title="Male"/>
+                                                            <segment title="Female"/>
+                                                            <segment title="Other"/>
                                                         </segments>
                                                         <connections>
                                                             <action selector="genderSegmentedControl:" destination="8kR-mW-svQ" eventType="valueChanged" id="1XP-Vv-diW"/>
@@ -425,8 +428,8 @@
                                                         <rect key="frame" x="179" y="0.0" width="180" height="31"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                                     </datePicker>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fecha de nacimiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ft5-sT-WzG">
-                                                        <rect key="frame" x="8" y="5" width="163" height="21"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Birthday:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ft5-sT-WzG">
+                                                        <rect key="frame" x="8" y="5" width="69" height="21"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -438,12 +441,21 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yj5-xS-J0C">
-                                        <rect key="frame" x="16" y="345" width="359" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yj5-xS-J0C">
+                                        <rect key="frame" x="16" y="396" width="359" height="34"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="QU7-tI-jDC">
+                                        <rect key="frame" x="123" y="0.0" width="145" height="144"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemCyanColor"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="Ka7-9C-8QT" appends="YES" id="tZv-ZQ-FOw"/>
+                                        </connections>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -464,12 +476,18 @@
                         <outlet property="genderImageView" destination="iVv-pw-BnY" id="SYT-67-EnF"/>
                         <outlet property="genderSegmentedControl" destination="pPL-AB-xf3" id="2gk-v8-xgx"/>
                         <outlet property="lastNameTextField" destination="J0v-KX-9Cj" id="wWI-v5-ZpY"/>
+                        <outlet property="profileImageView" destination="QU7-tI-jDC" id="Jb9-8f-cGP"/>
                         <outlet property="usernameTextField" destination="Yj5-xS-J0C" id="rl8-Sl-14q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4X-jA-yVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Ka7-9C-8QT">
+                    <connections>
+                        <action selector="selectProfileImage:" destination="8kR-mW-svQ" id="p6l-JQ-0gJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="250" y="2314"/>
+            <point key="canvasLocation" x="249.61832061068702" y="2313.3802816901411"/>
         </scene>
         <!--Settings-->
         <scene sceneID="GE1-rf-UPe">
@@ -484,10 +502,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Sing out"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Sign out"/>
                                 <connections>
                                     <action selector="SignOut:" destination="5ez-3t-ZMz" eventType="touchUpInside" id="sQp-yY-F7c"/>
-                                    <action selector="signOut:" destination="gem-wt-sRU" eventType="touchUpOutside" id="XQ2-gu-yqm"/>
+                                    <action selector="signOut:" destination="gem-wt-sRU" eventType="touchUpInside" id="K2s-pu-xUG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -512,8 +530,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="DI4-1X-FkU" kind="relationship" relationship="viewControllers" id="keb-Hk-xNP"/>
-                        <segue destination="T8T-j8-Cxs" kind="relationship" relationship="viewControllers" id="sc0-ey-lax"/>
-                        <segue destination="Hgh-BV-5bO" kind="relationship" relationship="viewControllers" id="u2F-pL-JCp"/>
+                        <segue destination="Hgh-BV-5bO" kind="relationship" relationship="viewControllers" id="MR9-Xa-Lde"/>
+                        <segue destination="T8T-j8-Cxs" kind="relationship" relationship="viewControllers" id="yDY-9v-zN8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kV1-nH-M3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -597,8 +615,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Facebook" width="24" height="24"/>
         <image name="apple" width="20" height="20"/>
+        <image name="facebook" width="24" height="24"/>
         <image name="firebase_28dp.png" width="56" height="56"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="gearshape.fill" catalog="system" width="128" height="123"/>
@@ -607,12 +625,16 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
         <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

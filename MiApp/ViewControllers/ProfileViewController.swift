@@ -20,6 +20,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var genderImageView: UIImageView!
     @IBOutlet weak var birthdayDatePicker: UIDatePicker!
     
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     // MARK: Properties
     
     var user: User!
@@ -28,6 +30,9 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        profileImageView.roundCorners()
+        profileImageView.setBorder(width: 1, color: UIColor.systemGray.cgColor)
+        
         getUserData()
     }
     
@@ -50,6 +55,12 @@ class ProfileViewController: UIViewController {
                     case .male: 0
                     case .female: 1
                     default: 2
+                    }
+                    
+                    self.genderSegmentedControl(self.genderSegmentedControl)
+                    
+                    if let profileImage = self.user.profileImageUrl {
+                        self.profileImageView.loadFrom(url: profileImage)
                     }
                 }
             } catch {
@@ -120,7 +131,12 @@ class ProfileViewController: UIViewController {
             break
         }
     }
-
+    
+    
+    @IBAction func selectProfileImage(_ sender: Any) {
+        print("Image Profile")
+    }
+    
     /*
     // MARK: - Navigation
 
